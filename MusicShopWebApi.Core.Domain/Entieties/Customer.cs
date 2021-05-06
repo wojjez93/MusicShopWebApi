@@ -4,6 +4,7 @@ namespace MusicShopWebApi.Core.Domain.Entieties
 {
     class Customer:AuditableEntity
     {
+        public int Id { get; set; }
         public string FirtsName { get; set; }
         public string LastName { get; set; }
         public int Age { get; set; }

@@ -9,6 +9,7 @@ namespace MusicShopWebApi.Core.Domain.Entieties
 {
     class Product:AuditableEntity
     {
+        public int Id { get; set; }
         public string Name { get; set; }
         public double Length { get; set; }
         public double Width { get; set; }
@@ -16,6 +17,8 @@ namespace MusicShopWebApi.Core.Domain.Entieties
         public double Weight { get; set; }
         public double PriceNet { get; set; }
         public string State { get; set; }
+        public Picture Pictures { get; set; }
+        public Category Category { get; set; }
         public string Description { get; set; }
     }
 }
