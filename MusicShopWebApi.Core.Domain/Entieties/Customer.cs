@@ -1,6 +1,8 @@
-﻿namespace MusicShopWebApi.Core.Domain
+﻿using MusicShopWebApi.Core.Domain.Common;
+
+namespace MusicShopWebApi.Core.Domain.Entieties
 {
-    class Customer
+    class Customer:AuditableEntity
     {
         public string FirtsName { get; set; }
         public string LastName { get; set; }

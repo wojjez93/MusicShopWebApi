@@ -1,4 +1,4 @@
-﻿namespace MusicShopWebApi.Core.Domain
+﻿namespace MusicShopWebApi.Core.Domain.Entieties
 {
     class Admin : Customer
     {
