@@ -19,6 +19,7 @@ namespace MusicShopWebApi.Core.Domain.Entieties
         public string State { get; set; }
         public Picture Pictures { get; set; }
         public Category Category { get; set; }
+        public Producer Producer { get; set; }
         public string Description { get; set; }
     }
 }
