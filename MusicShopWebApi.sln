@@ -15,7 +15,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{90FD7076-FD1A-
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApi", "WebApi", "{3D8FB01B-87B3-4E59-AC18-A3D55964D42A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicShopWebApi.Core.Domain", "MusicShopWebApi.Core.Domain\MusicShopWebApi.Core.Domain.csproj", "{A0716C72-D2D6-485B-80C8-E69E5628DD5F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicShopWebApi.Core.Domain", "MusicShopWebApi.Core.Domain\MusicShopWebApi.Core.Domain.csproj", "{A0716C72-D2D6-485B-80C8-E69E5628DD5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicShopWepApi.Core.Api", "MusicShopWepApi.Core.Api\MusicShopWepApi.Core.Api.csproj", "{E80D7DE6-07FE-4B2C-955A-22AA334B4D05}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{A0716C72-D2D6-485B-80C8-E69E5628DD5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A0716C72-D2D6-485B-80C8-E69E5628DD5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A0716C72-D2D6-485B-80C8-E69E5628DD5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E80D7DE6-07FE-4B2C-955A-22AA334B4D05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E80D7DE6-07FE-4B2C-955A-22AA334B4D05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E80D7DE6-07FE-4B2C-955A-22AA334B4D05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E80D7DE6-07FE-4B2C-955A-22AA334B4D05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -37,6 +43,7 @@ Global
 		{90FD7076-FD1A-4CBB-9084-B83731612BEF} = {15CFCFB9-3656-4C79-8377-1AEFC6B0F72B}
 		{3D8FB01B-87B3-4E59-AC18-A3D55964D42A} = {15CFCFB9-3656-4C79-8377-1AEFC6B0F72B}
 		{A0716C72-D2D6-485B-80C8-E69E5628DD5F} = {2A292926-3F85-4DEA-94F8-5B825A51EF3A}
+		{E80D7DE6-07FE-4B2C-955A-22AA334B4D05} = {2A292926-3F85-4DEA-94F8-5B825A51EF3A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6E35BCAF-51BE-46ED-AEDD-6420B8A0BD29}
