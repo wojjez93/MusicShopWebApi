@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MusicShopWebApi.Core.Domain.Entieties
 {
-    class Producer
+    public class Producer
     {
         public int Id { get; set; }
         public string Name { get; set; }
