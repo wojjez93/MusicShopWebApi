@@ -350,4 +350,4 @@ MigrationBackup/
 .ionide/
 
 #Setting DataBase
-setting
+setting.json
