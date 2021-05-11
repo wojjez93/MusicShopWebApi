@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicShopWepApi.Core.Api", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MusicShopWebApi.Infrastructure.MSDataBase", "MusicShopWebApi.Infrastructure.MSDataBase\MusicShopWebApi.Infrastructure.MSDataBase.csproj", "{9F5F79D5-87C2-46F3-90B8-8285660A8B77}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MusicShopWebApi.WebApi", "MusicShopWebApi.WebApi\MusicShopWebApi.WebApi.csproj", "{1835E4DA-5B07-4D79-8D66-72AD664FAEB2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{9F5F79D5-87C2-46F3-90B8-8285660A8B77}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F5F79D5-87C2-46F3-90B8-8285660A8B77}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F5F79D5-87C2-46F3-90B8-8285660A8B77}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1835E4DA-5B07-4D79-8D66-72AD664FAEB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1835E4DA-5B07-4D79-8D66-72AD664FAEB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1835E4DA-5B07-4D79-8D66-72AD664FAEB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1835E4DA-5B07-4D79-8D66-72AD664FAEB2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -51,6 +57,7 @@ Global
 		{A0716C72-D2D6-485B-80C8-E69E5628DD5F} = {2A292926-3F85-4DEA-94F8-5B825A51EF3A}
 		{E80D7DE6-07FE-4B2C-955A-22AA334B4D05} = {2A292926-3F85-4DEA-94F8-5B825A51EF3A}
 		{9F5F79D5-87C2-46F3-90B8-8285660A8B77} = {C86F2B17-3576-4659-BE8E-E0562731D0AD}
+		{1835E4DA-5B07-4D79-8D66-72AD664FAEB2} = {3D8FB01B-87B3-4E59-AC18-A3D55964D42A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6E35BCAF-51BE-46ED-AEDD-6420B8A0BD29}
