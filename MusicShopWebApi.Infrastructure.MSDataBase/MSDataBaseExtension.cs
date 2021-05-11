@@ -11,7 +11,7 @@ namespace MusicShopWebApi.Infrastructure.MSDataBase
 {
     public static class MSDataBaseExtension
     {
-        public static IServiceCollection AddMSDataBase(this IServiceCollection services, IConfiguration configuration)
+        public static IServiceCollection AddMSDataBaseServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<MSDataBaseContext>(options =>
                 options.UseSqlServer(configuration.GetConnectionString("MSDataBaseConnectionString")));           
