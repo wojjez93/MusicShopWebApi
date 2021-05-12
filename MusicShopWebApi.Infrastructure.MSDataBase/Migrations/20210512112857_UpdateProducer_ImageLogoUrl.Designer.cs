@@ -2,15 +2,17 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MusicShopWebApi.Infrastructure.MSDataBase;
 
 namespace MusicShopWebApi.Infrastructure.MSDataBase.Migrations
 {
     [DbContext(typeof(MSDataBaseContext))]
-    partial class MSDataBaseContextModelSnapshot : ModelSnapshot
+    [Migration("20210512112857_UpdateProducer_ImageLogoUrl")]
+    partial class UpdateProducer_ImageLogoUrl
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

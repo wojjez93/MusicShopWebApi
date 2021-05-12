@@ -17,5 +17,7 @@ namespace MusicShopWebApi.Core.Domain.Entieties
         public string Description { get; set; }
         [MaxLength(2100)]
         public string AddressUrl { get; set; }
+        [MaxLength(2100)]
+        public string ImageLogoUrl { get; set; }
     }
 }
