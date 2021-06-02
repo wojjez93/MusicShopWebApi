@@ -13,6 +13,7 @@ namespace MusicShopWebApi.Core.Test.Units.Entieties
     public class ProducerTests
     {
         private Producer producer;
+        private StringBuilder builder = new StringBuilder();
 
         #region ChangeNameTests
         [TestCase("ddddd")]
@@ -68,8 +69,7 @@ namespace MusicShopWebApi.Core.Test.Units.Entieties
         #endregion
 
         private string Builder(int maxLengthOfCharacters)
-        {
-            StringBuilder builder = new StringBuilder();
+        {            
             for (int i = 0; i < maxLengthOfCharacters; i++)
             {
                 builder.Append("a");
