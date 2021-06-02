@@ -15,7 +15,7 @@ namespace MusicShopWebApi.Core.Domain.Entieties
         [Required]
         [MaxLength(50)]
         public string Name { get; private set; }
-        public string Description { get; set; }
+        public string Description { get; private set; }
         [MaxLength(2100)]
         public string AddressUrl { get; set; }
         [MaxLength(2100)]
@@ -44,6 +44,26 @@ namespace MusicShopWebApi.Core.Domain.Entieties
                 throw new ArgumentOutOfRangeException(newName);
             }
             Name = newName;
+        }
+        public void AddDescription(string newDescription)
+        {
+            Description = newDescription;
+        }
+        public void AddAddressUrl(string addressUrl)
+        {
+            if (addressUrl.Length >= 2100)
+            {
+                throw new ArgumentOutOfRangeException(addressUrl);
+            }
+            AddressUrl = addressUrl;
+        }
+        public void AddImageLogoUrl(string imageLogoUrl)
+        {
+            if (imageLogoUrl.Length >= 2100)
+            {
+                throw new ArgumentOutOfRangeException(imageLogoUrl);
+            }
+            ImageLogoUrl = imageLogoUrl;
         }
     }
 }
