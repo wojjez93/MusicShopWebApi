@@ -28,6 +28,8 @@ namespace MusicShopWebApi.WebApi
         {
             services.AddMSDataBaseServices(Configuration);
             services.AddApplication();
+            services.AddControllers();
+            services.AddSwaggerGen();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -38,14 +40,18 @@ namespace MusicShopWebApi.WebApi
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "MusicShop");
+            });
+
             app.UseRouting();
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapGet("/", async context =>
-                {
-                    await context.Response.WriteAsync("Hello World!");
-                });
+                endpoints.MapGet("/", context => context.Response.WriteAsync("MusicShop"));
+                endpoints.MapControllers();
             });
         }
     }

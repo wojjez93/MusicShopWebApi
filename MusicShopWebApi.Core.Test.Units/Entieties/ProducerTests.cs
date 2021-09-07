@@ -54,9 +54,7 @@ namespace MusicShopWebApi.Core.Test.Units.Entieties
         [Test]
         public void AddAddressUrl_UrlIsTooLong_LessThen2100Characters()
         {
-
             Assert.Throws<ArgumentOutOfRangeException>(() => producer.AddAddressUrl(Builder(2100)));
-
         }
         #endregion
 

@@ -23,8 +23,8 @@ namespace MusicShopWepApi.Core.Api.Producer.Queries.Handlers
         }
         public GetProducerHandler(IMapper mapper, IProducerRepository repository)
         {
-            mapper=this.mapper;
-            repository = this.repository;
+            this.mapper = mapper;
+            this.repository = repository;
         }
     }
 }

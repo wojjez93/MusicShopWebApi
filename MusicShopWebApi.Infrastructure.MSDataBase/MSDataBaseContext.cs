@@ -12,6 +12,6 @@ namespace MusicShopWebApi.Infrastructure.MSDataBase
     {
         public MSDataBaseContext(DbContextOptions<MSDataBaseContext>options) :base(options){ }
 
-        DbSet<Producer> Producers { get; set; }
+        public DbSet<Producer> Producers { get; set; }
     }
 }
