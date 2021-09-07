@@ -13,15 +13,15 @@ namespace MusicShopWebApi.WebApi.Controllers
 {
     [Route("MusicShop/[controller]")]
     [ApiController]
-    public class ProducerController : Controller
+    public class ProducersController : Controller
     {
         private readonly IMediator mediator;
 
-        public ProducerController(IMediator mediator)
+        public ProducersController(IMediator mediator)
         {
             this.mediator = mediator;
         }
-        [HttpGet("producerInf/{id}",Name = "GetProducerInformation")]
+        [HttpGet("ProducerInfo/{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [AllowAnonymous]
         public async Task<ActionResult<ProducerDto>> GetProducerInformation(int id)
