@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using MusicShopWepApi.Core.Api.Dto;
 using MusicShopWepApi.Core.Api.Producer.Queries;
+using MusicShopWepApi.Core.Api.Producer.Query;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,6 +29,15 @@ namespace MusicShopWebApi.WebApi.Controllers
         {
             var producerDto = await mediator.Send(new GetProducer() {Id = id});
             return Ok(producerDto);
+        }
+
+        [HttpGet("ProducersList")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [AllowAnonymous]
+        public async Task<ActionResult<ProducerDto>> GetProducersNamesList()
+        {
+            var producentDto = await mediator.Send(new GetProducersList());
+            return Ok(producentDto);
         }
     }
 }

@@ -2,6 +2,7 @@
 using MusicShopWebApi.Core.Domain.Entieties;
 using MusicShopWebApi.Core.Domain.Repositories;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -18,11 +19,10 @@ namespace MusicShopWebApi.Infrastructure.MSDataBase.Repositories
         {
             this.context = context;
             producer = context.Producers;
-
         }
-        public Task<IEnumerable<Producer>> GetAllAsync()
-        {
-            throw new NotImplementedException();
+        public async Task<IEnumerable<Producer>> GetAllAsync()
+        {           
+            return await producer.AsNoTracking().Select(p => p.Name).ToListAsync() as IEnumerable<Producer>;
         }
 
         public async Task<Producer> GetAsync(int id)

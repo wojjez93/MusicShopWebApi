@@ -10,6 +10,6 @@ namespace MusicShopWepApi.Core.Api.Producer.Query
 {
     public class GetProducersList:IRequest<IEnumerable<ProducerDto>>
     {
-        public int Id { get; set; }
+        
     }
 }
